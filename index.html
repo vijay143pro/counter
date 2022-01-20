@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <p class="disp">0</p>
+        <button class="incr"><i class="fa fa-plus"></i></button>
+        <button class="decr"><i class="fa fa-minus"></i></button>
+    </div>
+</body>
+<script>
+    /* inital the number as 0 then get dom from html and store
+    in variable
+    d-display the result
+    plus-increament variable
+    minus-decreament variable
+    */
+    var num=0;
+    var d=document.querySelector(".disp");
+    var plus=document.querySelector(".incr");
+    var minus=document.querySelector(".decr");
+    // plus function
+    plus.addEventListener('click',()=>{
+        num++;
+        d.innerHTML=num;
+    });
+    // minus function
+        minus.addEventListener('click',()=>{
+            num--;
+            d.innerHTML=num;
+        }); 
+</script>
+</html>
